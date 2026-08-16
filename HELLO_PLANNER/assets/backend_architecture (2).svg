@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="clientGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="infraGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="obsGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fee2e2"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,2 L10,5 L0,8 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#1e293b">Full Backend Architecture</text>
+  <text x="600" y="64" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Modern Cloud-Native System Design</text>
+
+  <!-- ===== CLIENT LAYER ===== -->
+  <rect x="40" y="85" width="1120" height="75" rx="12" fill="url(#clientGrad)" filter="url(#shadow)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="60" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#92400e" letter-spacing="1">CLIENT LAYER</text>
+
+  <rect x="60" y="115" width="160" height="35" rx="8" fill="#fff" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="137" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1e293b">🌐 Web App</text>
+
+  <rect x="240" y="115" width="160" height="35" rx="8" fill="#fff" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="137" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1e293b">📱 Mobile App</text>
+
+  <rect x="420" y="115" width="160" height="35" rx="8" fill="#fff" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="500" y="137" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1e293b">🖥️ Desktop Client</text>
+
+  <rect x="600" y="115" width="160" height="35" rx="8" fill="#fff" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="680" y="137" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1e293b">🤖 API Consumers</text>
+
+  <rect x="780" y="115" width="160" height="35" rx="8" fill="#fff" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="860" y="137" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1e293b">🧩 Third-Party</text>
+
+  <rect x="960" y="115" width="160" height="35" rx="8" fill="#fff" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1040" y="137" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1e293b">🎮 IoT / Edge</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="160" x2="600" y2="175" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== EDGE & GATEWAY LAYER ===== -->
+  <rect x="40" y="185" width="1120" height="110" rx="12" fill="url(#edgeGrad)" filter="url(#shadow)" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="60" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#9d174d" letter-spacing="1">EDGE & GATEWAY LAYER</text>
+
+  <rect x="60" y="215" width="200" height="65" rx="8" fill="#fff" stroke="#ec4899" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="160" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🌍 CDN / Edge</text>
+  <text x="160" y="256" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Cloudflare / CloudFront</text>
+  <text x="160" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Static Cache + DDoS</text>
+
+  <rect x="280" y="215" width="200" height="65" rx="8" fill="#fff" stroke="#ec4899" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="380" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🛡️ WAF / Firewall</text>
+  <text x="380" y="256" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">AWS WAF / ModSecurity</text>
+  <text x="380" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Rate Limit + Bot Detection</text>
+
+  <rect x="500" y="215" width="200" height="65" rx="8" fill="#fff" stroke="#ec4899" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🚪 API Gateway</text>
+  <text x="600" y="256" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Kong / NGINX / Envoy</text>
+  <text x="600" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Routing + Auth + Transform</text>
+
+  <rect x="720" y="215" width="200" height="65" rx="8" fill="#fff" stroke="#ec4899" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="820" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">⚖️ Load Balancer</text>
+  <text x="820" y="256" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">HAProxy / ALB / NLB</text>
+  <text x="820" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Health Checks + SSL</text>
+
+  <rect x="940" y="215" width="200" height="65" rx="8" fill="#fff" stroke="#ec4899" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1040" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">📋 Reverse Proxy</text>
+  <text x="1040" y="256" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">NGINX / Traefik</text>
+  <text x="1040" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Compression + Caching</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="295" x2="600" y2="310" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== APPLICATION LAYER ===== -->
+  <rect x="40" y="320" width="1120" height="180" rx="12" fill="url(#appGrad)" filter="url(#shadow)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="60" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#1e40af" letter-spacing="1">APPLICATION LAYER</text>
+
+  <!-- Auth Service -->
+  <rect x="60" y="350" width="250" height="65" rx="8" fill="#fff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="185" y="373" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🔐 Auth Service</text>
+  <text x="185" y="391" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">OAuth 2.0 / OIDC / JWT</text>
+  <text x="185" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Keycloak / Auth0 / Cognito</text>
+
+  <!-- Business Services -->
+  <rect x="330" y="350" width="540" height="65" rx="8" fill="#fff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="373" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">⚙️ Business Services (Microservices / Monolith)</text>
+  <text x="600" y="391" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">REST / gRPC / GraphQL — Node.js / Go / Java / Python / Rust</text>
+  <text x="600" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Domain-Driven Design — Each service owns its data</text>
+
+  <!-- Service Mesh -->
+  <rect x="890" y="350" width="250" height="65" rx="8" fill="#fff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1015" y="373" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🕸️ Service Mesh</text>
+  <text x="1015" y="391" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Istio / Linkerd / Consul</text>
+  <text x="1015" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">mTLS + Traffic Management</text>
+
+  <!-- Message Queue -->
+  <rect x="60" y="425" width="540" height="65" rx="8" fill="#fff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="330" y="448" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">📨 Message Queue / Event Bus</text>
+  <text x="330" y="466" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Kafka / RabbitMQ / NATS / AWS SQS-SNS</text>
+  <text x="330" y="480" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Async Communication + Event Sourcing + CQRS</text>
+
+  <!-- Background Jobs -->
+  <rect x="620" y="425" width="520" height="65" rx="8" fill="#fff" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="880" y="448" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">⏱️ Background Jobs & Workers</text>
+  <text x="880" y="466" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Celery / Bull / Temporal / AWS Lambda</text>
+  <text x="880" y="480" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Scheduled Tasks + Batch Processing + Saga Pattern</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="500" x2="600" y2="515" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== DATA LAYER ===== -->
+  <rect x="40" y="525" width="1120" height="180" rx="12" fill="url(#dataGrad)" filter="url(#shadow)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="60" y="545" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#065f46" letter-spacing="1">DATA LAYER</text>
+
+  <!-- Primary DB -->
+  <rect x="60" y="555" width="250" height="65" rx="8" fill="#fff" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="185" y="578" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🗄️ Primary Database</text>
+  <text x="185" y="596" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">PostgreSQL / MySQL / CockroachDB</text>
+  <text x="185" y="610" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">ACID + Replication + Sharding</text>
+
+  <!-- NoSQL -->
+  <rect x="330" y="555" width="250" height="65" rx="8" fill="#fff" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="455" y="578" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">📊 NoSQL Stores</text>
+  <text x="455" y="596" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">MongoDB / DynamoDB / Cassandra</text>
+  <text x="455" y="610" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Document / Key-Value / Wide-Column</text>
+
+  <!-- Cache -->
+  <rect x="600" y="555" width="250" height="65" rx="8" fill="#fff" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="725" y="578" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">⚡ Cache Layer</text>
+  <text x="725" y="596" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Redis / Valkey / Memcached</text>
+  <text x="725" y="610" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Session + Hot Data + Pub/Sub</text>
+
+  <!-- Search -->
+  <rect x="870" y="555" width="270" height="65" rx="8" fill="#fff" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1005" y="578" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🔍 Search & Analytics</text>
+  <text x="1005" y="596" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Elasticsearch / ClickHouse / BigQuery</text>
+  <text x="1005" y="610" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Full-Text + OLAP + Aggregations</text>
+
+  <!-- Object Store -->
+  <rect x="60" y="630" width="540" height="65" rx="8" fill="#fff" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="330" y="653" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">📦 Object & File Storage</text>
+  <text x="330" y="671" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">AWS S3 / MinIO / GCS / Azure Blob</text>
+  <text x="330" y="685" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Images + Videos + Backups + Logs — S3-Compatible API</text>
+
+  <!-- Data Pipeline -->
+  <rect x="620" y="630" width="520" height="65" rx="8" fill="#fff" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="880" y="653" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1e293b">🔄 Data Pipeline & ETL</text>
+  <text x="880" y="671" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Apache Spark / Flink / Airflow / dbt</text>
+  <text x="880" y="685" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748b">Stream Processing + Data Warehouse + ML Pipeline</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="705" x2="600" y2="720" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ===== INFRASTRUCTURE LAYER ===== -->
+  <rect x="40" y="730" width="550" height="140" rx="12" fill="url(#infraGrad)" filter="url(#shadow)" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="60" y="750" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#5b21b6" letter-spacing="1">INFRASTRUCTURE & DEVOPS</text>
+
+  <rect x="60" y="760" width="160" height="45" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="780" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">🐳 Docker</text>
+  <text x="140" y="795" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Containerization</text>
+
+  <rect x="235" y="760" width="160" height="45" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="315" y="780" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">☸️ Kubernetes</text>
+  <text x="315" y="795" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Orchestration</text>
+
+  <rect x="410" y="760" width="160" height="45" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="490" y="780" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">🔄 CI/CD</text>
+  <text x="490" y="795" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">GitHub Actions / ArgoCD</text>
+
+  <rect x="60" y="815" width="160" height="45" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="835" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">🔒 Vault</text>
+  <text x="140" y="850" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Secrets Management</text>
+
+  <rect x="235" y="815" width="160" height="45" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="315" y="835" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">🏗️ Terraform</text>
+  <text x="315" y="850" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Infrastructure as Code</text>
+
+  <rect x="410" y="815" width="160" height="45" rx="8" fill="#fff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="490" y="835" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">☁️ Cloud</text>
+  <text x="490" y="850" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">AWS / GCP / Azure</text>
+
+  <!-- ===== OBSERVABILITY LAYER ===== -->
+  <rect x="610" y="730" width="550" height="140" rx="12" fill="url(#obsGrad)" filter="url(#shadow)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="630" y="750" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#991b1b" letter-spacing="1">OBSERVABILITY & RELIABILITY</text>
+
+  <rect x="630" y="760" width="160" height="45" rx="8" fill="#fff" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="710" y="780" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">📈 Prometheus</text>
+  <text x="710" y="795" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Metrics + Alerting</text>
+
+  <rect x="805" y="760" width="160" height="45" rx="8" fill="#fff" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="885" y="780" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">📝 ELK / Loki</text>
+  <text x="885" y="795" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Log Aggregation</text>
+
+  <rect x="980" y="760" width="160" height="45" rx="8" fill="#fff" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1060" y="780" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">🔍 Jaeger</text>
+  <text x="1060" y="795" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Distributed Tracing</text>
+
+  <rect x="630" y="815" width="160" height="45" rx="8" fill="#fff" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="710" y="835" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">📊 Grafana</text>
+  <text x="710" y="850" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Visualization + Dashboards</text>
+
+  <rect x="805" y="815" width="160" height="45" rx="8" fill="#fff" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="885" y="835" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">🚨 PagerDuty</text>
+  <text x="885" y="850" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Incident Management</text>
+
+  <rect x="980" y="815" width="160" height="45" rx="8" fill="#fff" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1060" y="835" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">💥 Chaos Eng.</text>
+  <text x="1060" y="850" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748b">Resilience Testing</text>
+</svg>
