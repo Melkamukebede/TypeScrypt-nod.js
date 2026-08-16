@@ -1,0 +1,221 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+
+<rect width="1200" height="1200" fill="#0d1117"/>
+
+<!-- Subtle grid dots -->
+<pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+  <circle cx="20" cy="20" r="1" fill="#ffffff" opacity="0.04"/>
+</pattern>
+<rect width="1200" height="1200" fill="url(#dots)"/>
+
+<!-- Connector lines from center to phase hubs -->
+<!-- P1 top-left -->
+<line x1="600" y1="600" x2="280" y2="260" stroke="#534AB7" stroke-width="1.5" opacity="0.4"/>
+<!-- P2 top-right -->
+<line x1="600" y1="600" x2="920" y2="260" stroke="#0F6E56" stroke-width="1.5" opacity="0.4"/>
+<!-- P3 bottom-right -->
+<line x1="600" y1="600" x2="920" y2="940" stroke="#854F0B" stroke-width="1.5" opacity="0.4"/>
+<!-- P4 bottom-left -->
+<line x1="600" y1="600" x2="280" y2="940" stroke="#993C1D" stroke-width="1.5" opacity="0.4"/>
+
+<!-- Connector lines from phase hubs to leaf nodes -->
+
+<!-- P1 → Node.js -->
+<line x1="280" y1="260" x2="100" y2="130" stroke="#534AB7" stroke-width="1" opacity="0.3"/>
+<!-- P1 → TypeScript -->
+<line x1="280" y1="260" x2="280" y2="90" stroke="#534AB7" stroke-width="1" opacity="0.3"/>
+<!-- P1 → .env -->
+<line x1="280" y1="260" x2="460" y2="110" stroke="#534AB7" stroke-width="1" opacity="0.3"/>
+
+<!-- P2 → Fastify -->
+<line x1="920" y1="260" x2="760" y2="100" stroke="#0F6E56" stroke-width="1" opacity="0.3"/>
+<!-- P2 → Modules -->
+<line x1="920" y1="260" x2="1000" y2="90" stroke="#0F6E56" stroke-width="1" opacity="0.3"/>
+<!-- P2 → Middleware -->
+<line x1="920" y1="260" x2="1110" y2="180" stroke="#0F6E56" stroke-width="1" opacity="0.3"/>
+<!-- P2 → HTTP codes -->
+<line x1="920" y1="260" x2="1110" y2="320" stroke="#0F6E56" stroke-width="1" opacity="0.3"/>
+
+<!-- P3 → SQL -->
+<line x1="920" y1="940" x2="1100" y2="820" stroke="#854F0B" stroke-width="1" opacity="0.3"/>
+<!-- P3 → RLS -->
+<line x1="920" y1="940" x2="1110" y2="960" stroke="#854F0B" stroke-width="1" opacity="0.3"/>
+<!-- P3 → Indexes -->
+<line x1="920" y1="940" x2="1000" y2="1090" stroke="#854F0B" stroke-width="1" opacity="0.3"/>
+<!-- P3 → Migrations -->
+<line x1="920" y1="940" x2="800" y2="1110" stroke="#854F0B" stroke-width="1" opacity="0.3"/>
+
+<!-- P4 → JWT -->
+<line x1="280" y1="940" x2="100" y2="820" stroke="#993C1D" stroke-width="1" opacity="0.3"/>
+<!-- P4 → bcrypt -->
+<line x1="280" y1="940" x2="90" y2="960" stroke="#993C1D" stroke-width="1" opacity="0.3"/>
+<!-- P4 → BullMQ -->
+<line x1="280" y1="940" x2="200" y2="1090" stroke="#993C1D" stroke-width="1" opacity="0.3"/>
+<!-- P4 → async/await -->
+<line x1="280" y1="940" x2="400" y2="1110" stroke="#993C1D" stroke-width="1" opacity="0.3"/>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- CENTER NODE -->
+<!-- ═══════════════════════════════════════ -->
+<circle cx="600" cy="600" r="80" fill="#161b22" stroke="#FF9900" stroke-width="2"/>
+<circle cx="600" cy="600" r="76" fill="#161b22" stroke="#FF9900" stroke-width="0.5" opacity="0.4"/>
+<text x="600" y="592" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900" letter-spacing="1">LIFE</text>
+<text x="600" y="608" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900" letter-spacing="1">PLANNER</text>
+<text x="600" y="624" text-anchor="middle" font-size="10" fill="#FF9900" opacity="0.6">backend</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PHASE 1 HUB — top-left — purple -->
+<!-- ═══════════════════════════════════════ -->
+<circle cx="280" cy="260" r="52" fill="#1a1530" stroke="#534AB7" stroke-width="1.5"/>
+<text x="280" y="254" text-anchor="middle" font-size="11" font-weight="700" fill="#AFA9EC" letter-spacing="0.5">PHASE 1</text>
+<text x="280" y="270" text-anchor="middle" font-size="10" fill="#7F77DD" opacity="0.9">Foundation</text>
+
+<!-- P1 leaf: Node.js -->
+<rect x="30" y="90" width="140" height="56" rx="10" fill="#1a1530" stroke="#534AB7" stroke-width="1"/>
+<text x="100" y="113" text-anchor="middle" font-size="12" font-weight="600" fill="#AFA9EC">Node.js</text>
+<text x="100" y="130" text-anchor="middle" font-size="10" fill="#7F77DD">Runs your code</text>
+
+<!-- P1 leaf: TypeScript -->
+<rect x="185" y="44" width="190" height="56" rx="10" fill="#1a1530" stroke="#534AB7" stroke-width="1"/>
+<text x="280" y="67" text-anchor="middle" font-size="12" font-weight="600" fill="#AFA9EC">TypeScript</text>
+<text x="280" y="84" text-anchor="middle" font-size="10" fill="#7F77DD">Catches bugs before runtime</text>
+
+<!-- P1 leaf: .env config -->
+<rect x="370" y="64" width="160" height="56" rx="10" fill="#1a1530" stroke="#534AB7" stroke-width="1"/>
+<text x="450" y="87" text-anchor="middle" font-size="12" font-weight="600" fill="#AFA9EC">.env config</text>
+<text x="450" y="104" text-anchor="middle" font-size="10" fill="#7F77DD">Secrets out of code</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PHASE 2 HUB — top-right — teal -->
+<!-- ═══════════════════════════════════════ -->
+<circle cx="920" cy="260" r="52" fill="#0d1f1a" stroke="#0F6E56" stroke-width="1.5"/>
+<text x="920" y="254" text-anchor="middle" font-size="11" font-weight="700" fill="#5DCAA5" letter-spacing="0.5">PHASE 2</text>
+<text x="920" y="270" text-anchor="middle" font-size="10" fill="#1D9E75" opacity="0.9">Core backend</text>
+
+<!-- P2 leaf: Fastify -->
+<rect x="650" y="54" width="160" height="56" rx="10" fill="#0d1f1a" stroke="#0F6E56" stroke-width="1"/>
+<text x="730" y="77" text-anchor="middle" font-size="12" font-weight="600" fill="#5DCAA5">Fastify server</text>
+<text x="730" y="94" text-anchor="middle" font-size="10" fill="#1D9E75">HTTP request handler</text>
+
+<!-- P2 leaf: Module structure -->
+<rect x="870" y="40" width="200" height="60" rx="10" fill="#0d1f1a" stroke="#0F6E56" stroke-width="1"/>
+<text x="970" y="63" text-anchor="middle" font-size="12" font-weight="600" fill="#5DCAA5">Module structure</text>
+<text x="970" y="80" text-anchor="middle" font-size="10" fill="#1D9E75">Route→Controller→Service→DB</text>
+
+<!-- P2 leaf: Middleware -->
+<rect x="1050" y="130" width="140" height="56" rx="10" fill="#0d1f1a" stroke="#0F6E56" stroke-width="1"/>
+<text x="1120" y="153" text-anchor="middle" font-size="12" font-weight="600" fill="#5DCAA5">Middleware</text>
+<text x="1120" y="170" text-anchor="middle" font-size="10" fill="#1D9E75">Auth before every route</text>
+
+<!-- P2 leaf: HTTP codes -->
+<rect x="1050" y="290" width="140" height="56" rx="10" fill="#0d1f1a" stroke="#0F6E56" stroke-width="1"/>
+<text x="1120" y="313" text-anchor="middle" font-size="12" font-weight="600" fill="#5DCAA5">HTTP codes</text>
+<text x="1120" y="330" text-anchor="middle" font-size="10" fill="#1D9E75">200 / 400 / 401 / 500</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PHASE 3 HUB — bottom-right — amber -->
+<!-- ═══════════════════════════════════════ -->
+<circle cx="920" cy="940" r="52" fill="#1f1800" stroke="#854F0B" stroke-width="1.5"/>
+<text x="920" y="934" text-anchor="middle" font-size="11" font-weight="700" fill="#EF9F27" letter-spacing="0.5">PHASE 3</text>
+<text x="920" y="950" text-anchor="middle" font-size="10" fill="#BA7517" opacity="0.9">Database</text>
+
+<!-- P3 leaf: SQL basics -->
+<rect x="1020" y="770" width="160" height="56" rx="10" fill="#1f1800" stroke="#854F0B" stroke-width="1"/>
+<text x="1100" y="793" text-anchor="middle" font-size="12" font-weight="600" fill="#EF9F27">SQL basics</text>
+<text x="1100" y="810" text-anchor="middle" font-size="10" fill="#BA7517">SELECT INSERT UPDATE</text>
+
+<!-- P3 leaf: RLS -->
+<rect x="1050" y="930" width="140" height="56" rx="10" fill="#1f1800" stroke="#854F0B" stroke-width="1"/>
+<text x="1120" y="953" text-anchor="middle" font-size="12" font-weight="600" fill="#EF9F27">Row Level Security</text>
+<text x="1120" y="970" text-anchor="middle" font-size="10" fill="#BA7517">Users see own data only</text>
+
+<!-- P3 leaf: Indexes -->
+<rect x="930" y="1074" width="160" height="56" rx="10" fill="#1f1800" stroke="#854F0B" stroke-width="1"/>
+<text x="1010" y="1097" text-anchor="middle" font-size="12" font-weight="600" fill="#EF9F27">Indexes</text>
+<text x="1010" y="1114" text-anchor="middle" font-size="10" fill="#BA7517">Speed up filter queries</text>
+
+<!-- P3 leaf: Migrations -->
+<rect x="710" y="1084" width="160" height="56" rx="10" fill="#1f1800" stroke="#854F0B" stroke-width="1"/>
+<text x="790" y="1107" text-anchor="middle" font-size="12" font-weight="600" fill="#EF9F27">Migrations</text>
+<text x="790" y="1124" text-anchor="middle" font-size="10" fill="#BA7517">Versioned SQL files</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PHASE 4 HUB — bottom-left — coral -->
+<!-- ═══════════════════════════════════════ -->
+<circle cx="280" cy="940" r="52" fill="#1f0e08" stroke="#993C1D" stroke-width="1.5"/>
+<text x="280" y="934" text-anchor="middle" font-size="11" font-weight="700" fill="#F0997B" letter-spacing="0.5">PHASE 4</text>
+<text x="280" y="950" text-anchor="middle" font-size="10" fill="#D85A30" opacity="0.9">Auth + Jobs</text>
+
+<!-- P4 leaf: JWT -->
+<rect x="30" y="790" width="140" height="56" rx="10" fill="#1f0e08" stroke="#993C1D" stroke-width="1"/>
+<text x="100" y="813" text-anchor="middle" font-size="12" font-weight="600" fill="#F0997B">JWT auth</text>
+<text x="100" y="830" text-anchor="middle" font-size="10" fill="#D85A30">Token on every request</text>
+
+<!-- P4 leaf: bcrypt -->
+<rect x="18" y="930" width="150" height="56" rx="10" fill="#1f0e08" stroke="#993C1D" stroke-width="1"/>
+<text x="93" y="953" text-anchor="middle" font-size="12" font-weight="600" fill="#F0997B">bcrypt hashing</text>
+<text x="93" y="970" text-anchor="middle" font-size="10" fill="#D85A30">Never store plain passwords</text>
+
+<!-- P4 leaf: BullMQ -->
+<rect x="110" y="1074" width="170" height="56" rx="10" fill="#1f0e08" stroke="#993C1D" stroke-width="1"/>
+<text x="195" y="1097" text-anchor="middle" font-size="12" font-weight="600" fill="#F0997B">BullMQ queue</text>
+<text x="195" y="1114" text-anchor="middle" font-size="10" fill="#D85A30">Jobs survive restarts</text>
+
+<!-- P4 leaf: async/await -->
+<rect x="320" y="1084" width="160" height="56" rx="10" fill="#1f0e08" stroke="#993C1D" stroke-width="1"/>
+<text x="400" y="1107" text-anchor="middle" font-size="12" font-weight="600" fill="#F0997B">async / await</text>
+<text x="400" y="1124" text-anchor="middle" font-size="10" fill="#D85A30">Every DB call waits</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- MIDDLE RING: Zod + Error handling + Singleton -->
+<!-- These orbit between center and phases -->
+<!-- ═══════════════════════════════════════ -->
+
+<!-- Zod validation — top center -->
+<line x1="600" y1="600" x2="600" y2="390" stroke="#888780" stroke-width="1" opacity="0.25" stroke-dasharray="4 4"/>
+<rect x="510" y="330" width="180" height="56" rx="10" fill="#18181a" stroke="#5F5E5A" stroke-width="1"/>
+<text x="600" y="353" text-anchor="middle" font-size="12" font-weight="600" fill="#B4B2A9">Zod validation</text>
+<text x="600" y="370" text-anchor="middle" font-size="10" fill="#888780">Validate every input</text>
+
+<!-- Error handling — right center -->
+<line x1="600" y1="600" x2="800" y2="600" stroke="#888780" stroke-width="1" opacity="0.25" stroke-dasharray="4 4"/>
+<rect x="804" y="572" width="180" height="56" rx="10" fill="#18181a" stroke="#5F5E5A" stroke-width="1"/>
+<text x="894" y="595" text-anchor="middle" font-size="12" font-weight="600" fill="#B4B2A9">Error handling</text>
+<text x="894" y="612" text-anchor="middle" font-size="10" fill="#888780">try / catch always</text>
+
+<!-- Singleton pattern — bottom center -->
+<line x1="600" y1="600" x2="600" y2="800" stroke="#888780" stroke-width="1" opacity="0.25" stroke-dasharray="4 4"/>
+<rect x="510" y="808" width="180" height="56" rx="10" fill="#18181a" stroke="#5F5E5A" stroke-width="1"/>
+<text x="600" y="831" text-anchor="middle" font-size="12" font-weight="600" fill="#B4B2A9">Singleton pattern</text>
+<text x="600" y="848" text-anchor="middle" font-size="10" fill="#888780">Create DB once, reuse</text>
+
+<!-- Foreign keys — left center -->
+<line x1="600" y1="600" x2="400" y2="600" stroke="#888780" stroke-width="1" opacity="0.25" stroke-dasharray="4 4"/>
+<rect x="216" y="572" width="180" height="56" rx="10" fill="#18181a" stroke="#5F5E5A" stroke-width="1"/>
+<text x="306" y="595" text-anchor="middle" font-size="12" font-weight="600" fill="#B4B2A9">Foreign keys</text>
+<text x="306" y="612" text-anchor="middle" font-size="10" fill="#888780">Enforce relationships</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- LEGEND bottom-right -->
+<!-- ═══════════════════════════════════════ -->
+<rect x="460" y="530" width="280" height="140" rx="12" fill="#0d1117" stroke="#2d333b" stroke-width="1"/>
+<text x="600" y="555" text-anchor="middle" font-size="11" font-weight="700" fill="#888780" letter-spacing="1">WHY THESE PHASES?</text>
+<line x1="480" y1="563" x2="720" y2="563" stroke="#2d333b" stroke-width="0.5"/>
+
+<circle cx="488" cy="582" r="5" fill="#534AB7"/>
+<text x="500" y="586" font-size="10" fill="#AFA9EC">P1 — nothing runs without environment</text>
+<circle cx="488" cy="602" r="5" fill="#0F6E56"/>
+<text x="500" y="606" font-size="10" fill="#5DCAA5">P2 — no place to put logic without server</text>
+<circle cx="488" cy="622" r="5" fill="#854F0B"/>
+<text x="500" y="626" font-size="10" fill="#EF9F27">P3 — data unsafe without DB rules</text>
+<circle cx="488" cy="642" r="5" fill="#993C1D"/>
+<text x="500" y="646" font-size="10" fill="#F0997B">P4 — anyone accesses data without auth</text>
+
+<!-- Title top-center -->
+<text x="600" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff" opacity="0.9" letter-spacing="2">BACKEND ROADMAP</text>
+<text x="600" y="54" text-anchor="middle" font-size="11" fill="#FF9900" opacity="0.7" letter-spacing="1">Life Planner Project</text>
+<line x1="400" y1="62" x2="800" y2="62" stroke="#FF9900" stroke-width="0.5" opacity="0.3"/>
+
+</svg>
+
+You are o
