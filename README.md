@@ -1,4 +1,8 @@
 # Backend Development Roadmap
+ ## Visual Roadmap
+
+<!-- Rendered in GitHub and VS Code preview -->
+<img src="./assets/backend_architecture.svg" width="100%" alt="Backend Roadmap"/>
 > Life Planner Project — Deep Concepts Reference
 > Read this before writing any backend code.
 
